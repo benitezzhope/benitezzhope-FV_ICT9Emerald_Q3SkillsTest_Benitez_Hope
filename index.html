@@ -11,7 +11,7 @@
        <style>
   body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-       background-color: rgb(231, 244, 255);
+       background-image: url(sagegreenaesthetic.jpg);
         background-size: 100% 120%;
 	    background-repeat: no repeat;
     	background-attachment: fixed;
@@ -39,55 +39,58 @@
 
 <br><br>
 <div class="row">
-<div class="container-fluid" style="width: 1000px; height: 750px; background-color: rgb(255, 255, 255); border-radius: 20px; margin-bottom: 30px;">
+<div class="container-fluid" style="width: 700px; height: 780px; background-color: rgb(255, 255, 255); border-radius: 20px; margin-bottom: 30px;">
 <h1 style="text-align: center; padding-top: 30px; color: rgb(70, 142, 142);"><b>Registration Form</b></h1>
 <h4 style="color: rgb(87, 97, 97);"><i></i></h4>
 
   <details class="ontoggle">
         <summary style="color: rgb(87, 97, 97); text-align: center;">Instructions</summary>
-        <p id="instruct"></p>
+        <p id="instruct" style="text-align: center;"></p>
     </details>
 
 <script>
     document.getElementById("instruct").innerHTML = "Please kindly fill out the registration form. Once completed, double-check the information provided and submit your application.";
       function calculate(){
         alert("You have successfully submitted your application. Good luck!");
+        
     }
 </script>
 <br>
   <div class="col">
     <label for="Fullname" style="padding-bottom: 6px;"><b>Name</b></label>
-    <input class="form-control mb-3" placeholder="input full name..." id="FN">
+    <input class="form-control mb-3" placeholder="Input Full Name..." id="FN">
     <div class="row">
     <div class="col-md-6">
     <label for="Age" style="padding-bottom: 6px;"><b>Age</b></label>
-    <input class="form-control mb-3" placeholder="input age..." id="Age">
+    <input class="form-control mb-3" placeholder="Input Age..." id="Age">
     </div>
 
     <div class="col-md-6">
     <label for="Number" style="padding-bottom: 6px;"><b>Contact Number</b></label>
-    <input class="form-control mb-3" placeholder="input contact number..." id="Number">
+    <input class="form-control mb-3" placeholder="Input Contact Number..." id="Number">
     </div>
     
     <div class="col">
     <label for="Email" style="padding-bottom: 6px;"><b>Email</b></label>
-    <input class="form-control mb-3" placeholder="input email..." id="Email">
+    <input class="form-control mb-3" placeholder="Input Email..." id="Email">
 
     <label for="username" style="padding-bottom: 6px;"><b>Username</b></label>
-    <input class="form-control mb-3" placeholder="input username..." id="username">
+    <input class="form-control mb-3" placeholder="Input Username..." id="username">
 
     <label for="Password" style="padding-bottom: 6px;"><b>Password</b></label>
-    <input class="form-control mb-3" placeholder="input password..." id="password">
+    <input class="form-control mb-3" placeholder="Input Password..." id="password">
 
     <input type="checkbox" id="terms" class="checkbox">
-    <label for="terms">I agree to the <b>Terms & Regulations</b></label>
+    <label for="terms">I accept the <b>Terms of Use & Private Policy</b></label>
     <br><br>
     <label for="Profile" style="padding-bottom: 6px;"><b>Profile Picture</b></label>
     <br>
-    <input type="file">
+
+    <input type="file" id="profilepic">
+
     <div style="text-align: center;">
     <button id="Submit" name="Submit" type="Submit" style="border-radius: 20px; background-color: rgb(70, 142, 142); font-size: 20px; color: white;" class="btn" onclick="calculate()">Submit Application</button>
-     <button id="Cancel" name="Cancel" type="Cancel" style="border-radius: 20px; background-color: rgb(240, 240, 240); font-size: 20px; color: rgb(70, 142, 142);" class="btn" onclick="calculate()">Cancel</button>
+     <button id="Cancel" name="Cancel" type="Cancel" style="border-radius: 20px; background-color: rgb(240, 240, 240); font-size: 20px; color: rgb(70, 142, 142);" class="btn">Cancel</button>
     </div>
     </div>
     </div>
