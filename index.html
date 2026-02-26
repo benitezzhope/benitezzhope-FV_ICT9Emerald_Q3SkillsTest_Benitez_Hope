@@ -36,10 +36,10 @@
 </div>
 </div>
 </nav>
-
+<form id="myForm">
 <br><br>
 <div class="row">
-<div class="container-fluid" style="width: 700px; height: 780px; background-color: rgb(255, 255, 255); border-radius: 20px; margin-bottom: 30px;">
+<div class="container-fluid" style="width: 700px; height: 920px; background-color: rgb(255, 255, 255); border-radius: 20px; margin-bottom: 30px;">
 <h1 style="text-align: center; padding-top: 30px; color: rgb(70, 142, 142);"><b>Registration Form</b></h1>
 <h4 style="color: rgb(87, 97, 97);"><i></i></h4>
 
@@ -47,11 +47,18 @@
         <summary style="color: rgb(87, 97, 97); text-align: center;">Instructions</summary>
         <p id="instruct" style="text-align: center;"></p>
     </details>
+    
+    <br>
+
+    <img src="profile pic.jpg" style="width:110px; height: 105px; border-radius: 50px; margin-left: auto; margin-right: auto; display: block;">
+
+    <label for="Profile" style="padding-bottom: 6px; margin-left: auto; margin-right: auto; display: block; text-align: center;"><b>Profile Picture</b></label>
+    <input type="file" id="profilepic" style="text-align: center; margin-left: 35%; margin-right: auto; display: block;"> 
 
 <script>
     document.getElementById("instruct").innerHTML = "Please kindly fill out the registration form. Once completed, double-check the information provided and submit your application.";
       function calculate(){
-        alert("You have successfully submitted your application. Good luck!");
+        alert("You have successfully submitted your application. Good luck!"); //submitted yey
         
     }
 </script>
@@ -83,20 +90,18 @@
     <input type="checkbox" id="terms" class="checkbox">
     <label for="terms">I accept the <b>Terms of Use & Private Policy</b></label>
     <br><br>
-    <label for="Profile" style="padding-bottom: 6px;"><b>Profile Picture</b></label>
-    <br>
 
-    <input type="file" id="profilepic">
 
     <div style="text-align: center;">
     <button id="Submit" name="Submit" type="Submit" style="border-radius: 20px; background-color: rgb(70, 142, 142); font-size: 20px; color: white;" class="btn" onclick="calculate()">Submit Application</button>
-     <button id="Cancel" name="Cancel" type="Cancel" style="border-radius: 20px; background-color: rgb(240, 240, 240); font-size: 20px; color: rgb(70, 142, 142);" class="btn">Cancel</button>
+     <button id="Cancel" name="Cancel" type="reset" style="border-radius: 20px; background-color: rgb(240, 240, 240); font-size: 20px; color: rgb(70, 142, 142);" class="btn">Cancel</button>
     </div>
     </div>
     </div>
     </div> 
     </div>
- 
-    <br><br>
+  </form>
+<!--
+  Photos from Google and Pinterest-->
 </body>
 </html>
